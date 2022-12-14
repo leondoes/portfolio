@@ -8,7 +8,7 @@ import AboutMe from './components/AboutMe';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
     <Route path="/" element={<App />} />
     <Route path="/AboutMe" element={<AboutMe />} />
@@ -16,4 +16,6 @@ root.render(
     </BrowserRouter>
   </StrictMode>
 );
+
+
 
