@@ -1,3 +1,4 @@
+import "./styles.css";
 import React from "react";
 import PageLayout from "./layout/pageLayout";
 
