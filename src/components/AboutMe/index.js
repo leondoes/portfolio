@@ -3,7 +3,7 @@ import PageLayout from "../../layout/pageLayout";
 import {AboutMeStyle}  from "./styled"
 
 const AboutMe = () => (
-  <PageLayout>
+  <PageLayout title="About Me">
     <AboutMeStyle>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis,
       tellus eu hendrerit pharetra, sapien nisi malesuada felis, a finibus ex

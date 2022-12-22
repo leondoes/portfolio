@@ -5,7 +5,7 @@ import PageLayout from "./layout/pageLayout";
 document.body.style.margin = 0;
 
 const App = () => (
-  <PageLayout/>
+  <PageLayout title="Porfolio"/>
 );
 
 export default App;
