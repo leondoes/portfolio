@@ -1,5 +1,5 @@
 import React from "react";
-import PageLayout from "../../layout/pageLayout";
+import PageLayout from "../../layout/PageLayout";
 import {AboutMeStyle}  from "./styled"
 
 const AboutMe = () => (

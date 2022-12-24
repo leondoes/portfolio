@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
 import { PageContainer, ContentContainer } from "./styled";
-import NavBar from "../../components/navbar";
-import { Link } from "react-router-dom";
+import NavBar from "../../components/NavBar";
+
 
 const PageLayout = ({ children, ...props }) => {
   useEffect(() => {
@@ -12,7 +12,6 @@ const PageLayout = ({ children, ...props }) => {
   return (
     <PageContainer {...props}>
       <NavBar />
-      <Link to="/aboutme">about-me</Link>
       <ContentContainer>{children}</ContentContainer>
     </PageContainer>
   );

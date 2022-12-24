@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { NavbarStyled } from "./styled";
+import { NavBarStyled,NavBarLogo } from "./styled";
+import NavBarLinks from "../NavBarLinks";
+
 
 const NavBar = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -19,9 +21,12 @@ const NavBar = () => {
     }, []);
   
     return (
-      <NavbarStyled style={{ height: collapsed ? "80px" : "102px" }}>
-        leondoes.
-      </NavbarStyled>
+      <NavBarStyled style={{ height: collapsed ? "80px" : "122px" }}>
+        <NavBarLogo>leondoes.</NavBarLogo>
+        <NavBarLinks
+        style={{ display: collapsed ? "none" : "flex" }}
+        />
+      </NavBarStyled>
     );
 }
 
