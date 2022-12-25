@@ -6,6 +6,7 @@ export const PageContainer = styled.div`
   font-family: 'Montserrat', sans-serif;
   color: #F7F6F7;
   background-color: #4e4449;
+  
 
   display: grid;
   grid-template-columns:
