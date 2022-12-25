@@ -10,7 +10,6 @@ export const NavBarStyled = styled.div`
   background: #D1936F;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
   color: #F7F6F7;
   border: 0;
   padding-left: 2%;

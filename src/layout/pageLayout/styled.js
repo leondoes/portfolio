@@ -4,11 +4,8 @@ import styled from "styled-components";
 
 export const PageContainer = styled.div`
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  display: grid;
   color: #F7F6F7;
   background-color: #4e4449;
-  font-size: 24px;
 
   display: grid;
   grid-template-columns:
@@ -18,17 +15,17 @@ export const PageContainer = styled.div`
   > * {
     grid-column: 2;
   }
-  /* Colouring of LEFT side of enterprise bar */
+  /* Colouring of LEFT side of navbar */
   &:before {
     content: "";
-    background-color: #313131;
+    background-color: #D1936F;
     grid-row: 1;
     grid-column: 1;
   }
-  /* Colouring of RIGHT side of enterprise bar */
+  /* Colouring of RIGHT side of navbar */
   &:after {
     content: "";
-    background-color: #313131;
+    background-color: #D1936F;
     grid-row: 1;
     grid-column: 3;
     z-index: 2;
