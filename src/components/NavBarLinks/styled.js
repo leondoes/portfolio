@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { device } from "../../common/theme";
 
 export const LinkContainer = styled.div`
   display: flex;
@@ -7,7 +8,6 @@ export const LinkContainer = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  font-family: "Work Sans";
   &:focus,
   &:visited,
   &:hover,
@@ -21,4 +21,8 @@ export const StyledLink = styled(Link)`
     transition: color 1s;
     color: #4E4449;
   }
+
+  @media ${device.mobileS} {
+      display: none;
+    }
 `;
