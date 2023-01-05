@@ -13,9 +13,9 @@ root.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
     <Route path="/" element={<App />} />
-    <Route path="/AboutMe" element={<AboutMe />} />
-    <Route path="/Experience" element={<Experience/>}/>
-    <Route path="/Contact"element={<Contact />} />
+    <Route path="/aboutme" element={<AboutMe />} />
+    <Route path="/experience" element={<Experience/>}/>
+    <Route path="/contact"element={<Contact />} />
     </Routes>
     </BrowserRouter>
   </StrictMode>

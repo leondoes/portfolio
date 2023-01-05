@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../common/theme";
+
 
 export const Deck = styled.div`
   margin: auto;
@@ -14,7 +14,4 @@ export const Card = styled.div`
   background-color: #9b9ea6;
   margin-bottom: 30px;
 
-  @media ${device.tablet} {
-
-  }
 `;

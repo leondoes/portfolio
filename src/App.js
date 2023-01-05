@@ -1,12 +1,14 @@
 import "./styles.css";
 import React from "react";
-import PageLayout from "./layout/PageLayout";
+import SplashPage from "./components/SplashPage";
 
 document.body.style.margin = 0;
+document.body.style.size = "160px";
 document.body.style.backgroundColor = "#4E4449"
 
+
 const App = () => (
-  <PageLayout title="Leondoes."/>
+  <SplashPage/>
 );
 
 export default App;

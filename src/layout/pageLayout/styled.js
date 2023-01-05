@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../../common/theme";
 
 export const PageContainer = styled.div`
   font-family: "Montserrat", sans-serif;
@@ -22,10 +21,6 @@ export const PageContainer = styled.div`
     grid-row: 1;
     grid-column: 1;
     top: 0;
-
-    @media ${device.mobileS} {
-      display: none;
-    }
   }
   /* Colouring of RIGHT side of navbar */
   &:after {
@@ -37,9 +32,6 @@ export const PageContainer = styled.div`
     z-index: 2;
     top: 0;
     
-    @media ${device.mobileS} {
-      display: none;
-    }
   }
 `;
 

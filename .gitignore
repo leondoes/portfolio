@@ -10,6 +10,8 @@
 
 # production
 /build
+
+# my personal todo file
 todo.txt
 
 # misc

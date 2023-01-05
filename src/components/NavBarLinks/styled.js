@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { device } from "../../common/theme";
+
 
 export const LinkContainer = styled.div`
   display: flex;
@@ -22,7 +22,4 @@ export const StyledLink = styled(Link)`
     color: #4E4449;
   }
 
-  @media ${device.mobileS} {
-      display: none;
-    }
 `;
