@@ -16,7 +16,8 @@ export const LinkContainer = styled.div`
 `;
 
 export const AboutLink = styled(Link)`
-  background-color: red;
+  background-color: red;    
+  transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
       transform: translateY(25vh);
@@ -44,7 +45,7 @@ export const AboutLink = styled(Link)`
   color: #f7f6f7;
 
   &:hover {
-    transition: padding-left 0.2s;
+
     padding-left: 20px;
     color: #4e4449;
   }
@@ -52,7 +53,7 @@ export const AboutLink = styled(Link)`
 
 export const WorkLink = styled(Link)`
   background-color: red;
-
+    transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
       transform: translateY(5vh);
@@ -80,12 +81,13 @@ export const WorkLink = styled(Link)`
   color: #f7f6f7;
 
   &:hover {
-    transition: padding-left 0.2s;
+
     padding-left: 20px;
     color: #4e4449;
   }
 `;
 export const ContactLink = styled(Link)`
+  transition: padding-left 0.2s;
   background-color: red;
   @keyframes slideInBottom {
     0% {
@@ -114,21 +116,23 @@ export const ContactLink = styled(Link)`
   color: #f7f6f7;
 
   &:hover {
-    transition: padding-left 0.2s;
     padding-left: 20px;
     color: #4e4449;
+    padding-right:70px;
   }
 `;
 
 export const Mugshot = styled.img`
-  z-index: 0;
-  max-width: 100%;
+  max-width: 100vw;
   max-height: 100vh;
-  float: right;
+  background-color:yellow;
 `;
 
 export const PageContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns:
+    50% 50%;
+
   background-color: black;
   justify-content: space-between;
 `;

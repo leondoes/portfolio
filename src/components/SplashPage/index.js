@@ -10,14 +10,32 @@ import {
 } from "./styled";
 
 document.title = "";
+
+const getWorkLinkText = (workHover, contactHover) => {
+  let workLinkText = ""
+  switch(`${workHover}-${contactHover}`) {
+    case "true-false":
+      workLinkText = "Work";
+      break;
+    case "false-true": 
+      workLinkText = "my";
+      break;
+    default:
+      workLinkText = "what";
+  }
+  return workLinkText
+}
+
+
 const SplashPage = () => {
   useEffect(() => {
     document.title = "leondoes.";
   }, []);
 
   const [aboutHover, setAboutHover] = useState(false);
-  const [experienceHover, setExperienceHover] = useState(false);
+  const [workHover, setWorkHover] = useState(false);
   const [contactHover, setContactHover] = useState(false);
+
 
   return (
     <PageContainer>
@@ -25,16 +43,16 @@ const SplashPage = () => {
         <AboutLink
           onMouseEnter={() => setAboutHover(true)}
           onMouseLeave={() => setAboutHover(false)}
-          to="/aboutme"
+          to="/about"
         >
           {aboutHover ? `About` : `this is`}
         </AboutLink>
         <WorkLink
-          onMouseEnter={() => setExperienceHover(true)}
-          onMouseLeave={() => setExperienceHover(false)}
+          onMouseEnter={() => setWorkHover(true)}
+          onMouseLeave={() => setWorkHover(false)}
           to="/experience"
         >
-          {experienceHover ? `Work` : `what`}
+          {getWorkLinkText(workHover, contactHover)}
         </WorkLink>
         <ContactLink
           onMouseEnter={() => setContactHover(true)}
