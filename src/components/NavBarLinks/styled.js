@@ -8,6 +8,10 @@ export const LinkContainer = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
+font-family: "Work Sans";
+font-weight: 700;
+color: #F1F4F3;
+
   &:focus,
   &:visited,
   &:hover,
@@ -15,11 +19,9 @@ export const StyledLink = styled(Link)`
   &:active {
     text-decoration: none;
   }
-  color: #f7f6f7;
 
   &:hover {
-    transition: color 1s;
-    color: #4E4449;
+    color: #FF311B;
   }
 
 `;

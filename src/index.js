@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from './App';
 import About from './components/About';
-import Experience from './components/Experience';
+import Work from './components/Work';
 import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +14,7 @@ root.render(
     <Routes>
     <Route path="/" element={<App />} />
     <Route path="/about" element={<About />} />
-    <Route path="/experience" element={<Experience/>}/>
+    <Route path="/work" element={<Work/>}/>
     <Route path="/contact"element={<Contact />} />
     </Routes>
     </BrowserRouter>

@@ -50,7 +50,7 @@ const SplashPage = () => {
         <WorkLink
           onMouseEnter={() => setWorkHover(true)}
           onMouseLeave={() => setWorkHover(false)}
-          to="/experience"
+          to="/work"
         >
           {getWorkLinkText(workHover, contactHover)}
         </WorkLink>
@@ -59,7 +59,7 @@ const SplashPage = () => {
           onMouseLeave={() => setContactHover(false)}
           to="/Contact"
         >
-          {contactHover ? `Contact` : `leondoes. `} 
+          {contactHover ? `Contact` : <div style={{display: "flex"}}>leon<div style={{color:"#ff311b"}}>does.</div></div>} 
         </ContactLink>
       </LinkContainer>
       <Mugshot src={img} alt="portrait" />

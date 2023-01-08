@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const PageContainer = styled.div`
   font-family: "Montserrat", sans-serif;
-  color: #f7f6f7;
-  background-color: #4e4449;
+  color: #F1F4F3;
+  background-color: #242225;
 
   display: grid;
   grid-template-columns:
@@ -17,7 +17,7 @@ export const PageContainer = styled.div`
   &:before {
     content: "";
     position:sticky;
-    background-color: #d1936f;
+    background-color: #242225;
     grid-row: 1;
     grid-column: 1;
     top: 0;
@@ -26,7 +26,7 @@ export const PageContainer = styled.div`
   &:after {
     content: "";
     position: sticky;
-    background-color: #d1936f;
+    background-color: #242225;
     grid-row: 1;
     grid-column: 3;
     z-index: 2;

@@ -22,7 +22,7 @@ const NavBar = () => {
   
     return (
       <NavBarStyled style={{ height: collapsed ? "80px" : "122px" }}>
-        <NavBarLogo>leondoes.</NavBarLogo>
+        <NavBarLogo to="/">leon<div style={{color:"#FF311B"}}>does.</div></NavBarLogo>
         <NavBarLinks
         style={{ display: collapsed ? "none" : "flex" }}
         />

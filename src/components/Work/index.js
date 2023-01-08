@@ -2,8 +2,8 @@ import React from "react";
 import PageLayout from "../../layout/PageLayout";
 import { Card, Deck } from "./styled";
 
-const Experience = () => (
-  <PageLayout title="Experience">
+const Work = () => (
+  <PageLayout title="Work">
     <Deck>
       <Card>
         <div>Hello</div>
@@ -15,4 +15,4 @@ const Experience = () => (
   </PageLayout>
 );
 
-export default Experience;
+export default Work;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const LinkContainer = styled.div`
-  background-color: blue;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -11,12 +10,12 @@ export const LinkContainer = styled.div`
   gap: 15px;
   letter-spacing: -4px;
   font-family: "Work Sans";
-  font-size: 90px;
+  font-size: 150px;
   font-weight: 700;
 `;
 
 export const AboutLink = styled(Link)`
-  background-color: red;    
+  color: #F1F4F3;
   transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
@@ -42,18 +41,16 @@ export const AboutLink = styled(Link)`
   &:active {
     text-decoration: none;
   }
-  color: #f7f6f7;
 
   &:hover {
-
     padding-left: 20px;
-    color: #4e4449;
+    color: #ff311b;
   }
 `;
 
 export const WorkLink = styled(Link)`
-  background-color: red;
-    transition: padding-left 0.2s;
+  color: #F1F4F3;
+  transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
       transform: translateY(5vh);
@@ -78,17 +75,15 @@ export const WorkLink = styled(Link)`
   &:active {
     text-decoration: none;
   }
-  color: #f7f6f7;
 
   &:hover {
-
     padding-left: 20px;
-    color: #4e4449;
+    color: #ff311b;
   }
 `;
 export const ContactLink = styled(Link)`
+  color: #F1F4F3;
   transition: padding-left 0.2s;
-  background-color: red;
   @keyframes slideInBottom {
     0% {
       transform: translateY(2vh);
@@ -113,26 +108,23 @@ export const ContactLink = styled(Link)`
   &:active {
     text-decoration: none;
   }
-  color: #f7f6f7;
 
   &:hover {
     padding-left: 20px;
-    color: #4e4449;
-    padding-right:70px;
+    color: #ff311b;
+    padding-right: 90px;
   }
 `;
 
 export const Mugshot = styled.img`
   max-width: 100vw;
   max-height: 100vh;
-  background-color:yellow;
 `;
 
 export const PageContainer = styled.div`
   display: grid;
-  grid-template-columns:
-    50% 50%;
+  grid-template-columns: 50% 50%;
 
-  background-color: black;
+  background-color: #242225;
   justify-content: space-between;
 `;
