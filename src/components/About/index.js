@@ -5,20 +5,20 @@ import { Copy, PageContainer, Subtitle, Title } from "./styled";
 const About = () => (
   <PageLayout title="About">
     <PageContainer>
-      <Title>I design & develop front-end REACT applications</Title>
+      <Title>I design & develop REACT applications</Title>
       <Subtitle>About</Subtitle>
       <Copy>
         <div>
-          Hi there! My name is Leon and I live in Toronto Canada. I am a highly
-          motivated and detail-oriented REACT developer with a passion for
+          Hi there! I'm a Toronto-based developer specilizing in UI/UX. I am a highly
+          motivated and detail-oriented React developer with a passion for
           creating intuitive, user-friendly web applications. I have a strong
-          foundation in HTML, CSS, and JavaScript, and have gained valuable
-          skills in REACT and other relevant technologies. I am proficient in
+          foundation in HTML, CSS, JavaScript, and have gained valuable
+          skills in React and other relevant technologies. I am proficient in
           agile development methodologies and have had the opportunity to work
           on a wide range of web-based projects, collaborating with
           cross-functional teams to bring ideas to life. I am always looking for
           ways to improve and expand my skillset, and am excited to take on new
-          challenges as a freelance REACT developer.
+          challenges as a freelance React developer.
         </div>
         <div>
           In my previous roles, I have consistently delivered high-quality code
@@ -33,7 +33,7 @@ const About = () => (
           enjoy collaborating with others to achieve common goals. I am
           adaptable and thrive in dynamic environments, and am always looking
           for ways to contribute to the success of the team. I am excited to
-          bring my skills and experience to new projects as a freelance REACT
+          bring my skills and experience to new projects as a freelance React
           developer, and am confident that I can make a positive impact on your
           team.
         </div>

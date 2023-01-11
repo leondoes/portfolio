@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {themeColors, themeFonts} from "../../common/theme"
 
 export const LinkContainer = styled.div`
+  font-family: ${themeFonts.brandFont};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,13 +11,12 @@ export const LinkContainer = styled.div`
   padding-left: 90px;
   gap: 15px;
   letter-spacing: -4px;
-  font-family: "Work Sans";
   font-size: 150px;
   font-weight: 700;
 `;
 
 export const AboutLink = styled(Link)`
-  color: #F1F4F3;
+  color: ${themeColors.font};
   transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
@@ -44,12 +45,12 @@ export const AboutLink = styled(Link)`
 
   &:hover {
     padding-left: 20px;
-    color: #ff311b;
+    color: ${themeColors.brand};
   }
 `;
 
 export const WorkLink = styled(Link)`
-  color: #F1F4F3;
+  color: ${themeColors.font};
   transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
@@ -78,11 +79,11 @@ export const WorkLink = styled(Link)`
 
   &:hover {
     padding-left: 20px;
-    color: #ff311b;
+    color: ${themeColors.brand};
   }
 `;
 export const ContactLink = styled(Link)`
-  color: #F1F4F3;
+  color: ${themeColors.font};
   transition: padding-left 0.2s;
   @keyframes slideInBottom {
     0% {
@@ -111,7 +112,7 @@ export const ContactLink = styled(Link)`
 
   &:hover {
     padding-left: 20px;
-    color: #ff311b;
+    color: ${themeColors.brand};
     padding-right: 90px;
   }
 `;
@@ -125,6 +126,6 @@ export const PageContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
 
-  background-color: #242225;
+  background-color: ${themeColors.dark};
   justify-content: space-between;
 `;

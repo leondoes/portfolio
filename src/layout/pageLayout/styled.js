@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import {themeColors, themeFonts} from "../../common/theme"
 
 export const PageContainer = styled.div`
-  font-family: "Montserrat", sans-serif;
-  color: #F1F4F3;
-  background-color: #242225;
+  font-family: ${themeFonts.bodyFont};
+  color: ${themeColors.font};
+  background-color: ${themeColors.dark};
 
   display: grid;
   grid-template-columns:
@@ -17,7 +18,7 @@ export const PageContainer = styled.div`
   &:before {
     content: "";
     position:sticky;
-    background-color: #242225;
+    background-color: ${themeColors.dark};
     grid-row: 1;
     grid-column: 1;
     top: 0;
@@ -26,7 +27,7 @@ export const PageContainer = styled.div`
   &:after {
     content: "";
     position: sticky;
-    background-color: #242225;
+    background-color: ${themeColors.dark};
     grid-row: 1;
     grid-column: 3;
     z-index: 2;

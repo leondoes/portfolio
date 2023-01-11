@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import {themeColors, themeFonts} from "../../common/theme"
 export const navBarHeight = 90;
 
 export const NavBarStyled = styled.div`
   position: sticky;
   top: 0;
+  background-color: ${themeColors.dark};
   flex-direction: column;
   z-index: 1;
-  background: #242225;
   display: flex;
   justify-content: space-evenly;
   border: 0;
@@ -18,11 +18,11 @@ export const NavBarStyled = styled.div`
 
 export const NavBarLogo = styled(Link)`
 display: flex;
-font-family: 'Work Sans';
+font-family: ${themeFonts.brandFont};
 font-weight: 900;
 font-size: 80px;
 padding-left: 69px;
-color: #F1F4F3;
+color: ${themeColors.font};
 &:focus,
   &:visited,
   &:hover,
@@ -30,4 +30,4 @@ color: #F1F4F3;
   &:active {
     text-decoration: none;
   }
-`
+`;

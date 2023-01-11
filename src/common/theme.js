@@ -1,5 +1,17 @@
 //Supported resolutions
 
+export const themeFonts = {
+  brandFont: "Work Sans",
+  bodyFont: "Montserrat"
+}
+
+export const themeColors = {
+  brand: "#FF311B",
+  dark: "#242225",
+  font: "#F1F4F3"
+}
+
+
 export const mediaQuery = {
   up: {
     mobile: `@media (min-width: 600px)`,
