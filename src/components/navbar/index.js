@@ -23,10 +23,10 @@ const NavBar = () => {
     }, []);
   
     return (
-      <NavBarStyled style={{ height: collapsed ? "80px" : "122px" }}>
+      <NavBarStyled style={{ height: collapsed ? "90px" : "90px" }}>
         <NavBarLogo to="/">leon<div style={{color:brandColor}}>does.</div></NavBarLogo>
         <NavBarLinks
-        style={{ display: collapsed ? "none" : "flex" }}
+        style={{ display: collapsed ? "none" : "flex"}}
         />
       </NavBarStyled>
     );

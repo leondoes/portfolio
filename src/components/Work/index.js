@@ -3,7 +3,7 @@ import PageLayout from "../../layout/PageLayout";
 import { Card, Deck } from "./styled";
 
 const Work = () => (
-  <PageLayout title="Work">
+  <PageLayout>
     <Deck>
       <Card>
         <div>Hello</div>

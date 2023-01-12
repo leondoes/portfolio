@@ -9,8 +9,6 @@ import {
   Mugshot,
 } from "./styled";
 
-document.title = "";
-
 const getWorkLinkText = (workHover, contactHover) => {
   let workLinkText = ""
   switch(`${workHover}-${contactHover}`) {

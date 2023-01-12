@@ -4,6 +4,7 @@ import SplashPage from "./components/SplashPage";
 import package_json from "../package.json";
 
 document.body.style.margin = 0;
+document.title = "leondoes.";
 
 
 window.__leonVersion = package_json.version;

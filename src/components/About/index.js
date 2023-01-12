@@ -3,7 +3,7 @@ import PageLayout from "../../layout/PageLayout";
 import { Copy, PageContainer, Subtitle, Title } from "./styled";
 
 const About = () => (
-  <PageLayout title="About">
+  <PageLayout>
     <PageContainer>
       <Title>I design & develop REACT applications</Title>
       <Subtitle>About</Subtitle>

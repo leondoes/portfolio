@@ -5,6 +5,10 @@ export const PageContainer = styled.div`
   font-family: ${themeFonts.bodyFont};
   color: ${themeColors.font};
   background-color: ${themeColors.dark};
+  height: 100%;
+  
+  //Doesn't move content on webpage when there's no scroll bar
+  padding-left: calc(100vw - 100%);
 
   display: grid;
   grid-template-columns:
