@@ -9,7 +9,7 @@ const About = () => (
       <Subtitle>About</Subtitle>
       <Copy>
         <div>
-          Hi there! I'm a Toronto-based developer specilizing in UI/UX. I am a highly
+          Hi there! I'm a Toronto-based developer specilizing in UI/UX.I am highly
           motivated and detail-oriented React developer with a passion for
           creating intuitive, user-friendly web applications. I have a strong
           foundation in HTML, CSS, JavaScript, and have gained valuable

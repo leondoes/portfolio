@@ -20,6 +20,7 @@ font-weight: 900;
 font-size: 80px;
 margin-left: 90px;
 margin-bottom:10px;
+letter-spacing: -4px;
 color: ${themeColors.font};
 &:focus,
   &:visited,

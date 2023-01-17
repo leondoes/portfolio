@@ -6,11 +6,10 @@ export const LinkContainer = styled.div`
   font-family: ${themeFonts.brandFont};
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  padding-left: 90px;
+  padding-left: 20%;
   gap: 15px;
-  letter-spacing: -4px;
+  letter-spacing: -15px;
   font-size: 150px;
   font-weight: 700;
 `;
