@@ -6,7 +6,7 @@ const Work = () => (
   <PageLayout>
     <Deck>
       <Card>
-        <div>Hello</div>
+        <div>Hello2</div>
       </Card>
       <Card>
         <div>Hello</div>

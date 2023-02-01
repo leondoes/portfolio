@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {themeColors, themeFonts} from "../../common/theme"
+import {themeColors, themeFonts, mediaQuery} from "../../common/theme"
 
 export const LinkContainer = styled.div`
   font-family: ${themeFonts.brandFont};
@@ -119,12 +119,24 @@ export const ContactLink = styled(Link)`
 export const Mugshot = styled.img`
   max-width: 100vw;
   max-height: 100vh;
+
+ ${mediaQuery.up.tablet} {
+    justify-self: flex-end;
+  }
+
+  
 `;
 
 export const PageContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
+  ${mediaQuery.up.desktopL} {
+    background-color:red;
+  }
+  ${mediaQuery.down.tablet} {
+    background-color:yellow;
+  }
+
 
   background-color: ${themeColors.dark};
-  justify-content: space-between;
 `;
