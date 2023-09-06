@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {themeFonts} from "../../common/theme"
+import {themeFonts, themeColors} from "../../common/theme"
 
 
 export const LinkContainer = styled.div`
@@ -11,7 +11,7 @@ export const LinkContainer = styled.div`
 export const StyledLink = styled(Link)`
 font-family: ${themeFonts.brandFont};
 font-weight: 700;
-color: #F1F4F3;
+color: ${themeColors.font};
 
   &:focus,
   &:visited,
@@ -22,7 +22,7 @@ color: #F1F4F3;
   }
 
   &:hover {
-    color: #FF311B;
+    color: ${themeColors.brand};
   }
 
 `;
