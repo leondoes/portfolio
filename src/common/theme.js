@@ -7,7 +7,7 @@ export const themeFonts = {
 
 export const themeColors = {
   brand: "#FF311B",
-  dark: "#242225",
+  dark: "black",
   font: "#F1F4F3"
 }
 

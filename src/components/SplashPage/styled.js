@@ -7,11 +7,17 @@ export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20%;
+  padding-left: 10%;
   gap: 15px;
   letter-spacing: -15px;
   font-size: 150px;
   font-weight: 700;
+
+  ${mediaQuery.down.tablet} {
+    padding-left: 7%;
+    letter-spacing: -10px;
+    font-size: 100px;
+  }
 `;
 
 export const AboutLink = styled(Link)`
@@ -122,6 +128,10 @@ export const Mugshot = styled.img`
 
  ${mediaQuery.up.tablet} {
     justify-self: flex-end;
+  }}
+
+  ${mediaQuery.down.tablet} {
+    display: none;
   }
 
   
@@ -130,13 +140,6 @@ export const Mugshot = styled.img`
 export const PageContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
-  ${mediaQuery.up.desktopL} {
-    background-color:red;
-  }
-  ${mediaQuery.down.tablet} {
-    background-color:yellow;
-  }
-
-
   background-color: ${themeColors.dark};
+  height: 100vh;
 `;
