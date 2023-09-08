@@ -7,20 +7,21 @@ export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10%;
+  padding-left: 20%;
   gap: 15px;
   letter-spacing: -15px;
   font-size: 150px;
   font-weight: 700;
 
   ${mediaQuery.down.tablet} {
-    padding-left: 7%;
+    padding-left: 10%;
     letter-spacing: -10px;
     font-size: 100px;
   }
 `;
 
 export const AboutLink = styled(Link)`
+  width: 400px;
   color: ${themeColors.font};
   transition: padding-left 0.2s;
   @keyframes slideInBottom {

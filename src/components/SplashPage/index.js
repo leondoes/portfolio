@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import img from "../../assets/temp_mugshot.png";
+import img from "../../assets/mugshot.png";
 import {
   LinkContainer,
   AboutLink,
