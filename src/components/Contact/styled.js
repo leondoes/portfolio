@@ -10,14 +10,14 @@ flex-direction:column;
 export const Title = styled.div`
 font-weight: 900;
 font-size: 70px;
-padding-bottom: 2vh;
-padding-top: 10vh;
+padding-bottom: 30vh;
+padding-top: 20vh;
 `;
 
 export const Subtitle = styled.div `
 font-weight: 700;
 font-size: 50px;
-padding-bottom: 2vh;
+padding-bottom: 10vh;
 `
 
 export const Copy = styled.div`
@@ -26,16 +26,22 @@ display: flex;
 flex-direction: column;
 font-size: 24px;
 gap: 20px;
-padding-bottom: 2vh;
+padding-bottom: 20vh;
 `;
 
 export const EmailContainer = styled.div `
 font-family: ${themeFonts.brandFont};
-display: inline-flex;
+margin: auto;
+display: flex;
 font-weight: 900;
-font-size: 50px;
+font-size: 5vh;
 cursor: pointer;
 `;
 
+export const GitHubLogo = styled.img `
+width: 5vh;
+height: 5vh;
+padding-right: 10px;
+`
 
 

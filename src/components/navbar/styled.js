@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {themeColors, themeFonts} from "../../common/theme"
+import {themeColors, themeFonts, mediaQuery} from "../../common/theme"
 
 export const NavBarStyled = styled.div`
   position: sticky;
@@ -28,5 +28,9 @@ color: ${themeColors.font};
   &:link,
   &:active {
     text-decoration: none;
+  }
+
+  ${mediaQuery.down.tablet} {
+    margin-left: 10%;
   }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {themeColors, themeFonts} from "../../common/theme"
+import {themeColors, themeFonts, mediaQuery} from "../../common/theme"
 
 export const PageContainer = styled.div`
   font-family: ${themeFonts.bodyFont};
@@ -43,6 +43,10 @@ export const PageContainer = styled.div`
 export const ContentContainer = styled.div`
 display: flex;
 margin: 30px 100px 30px 100px;
+
+${mediaQuery.down.tablet} {
+    margin: 0px;
+  }
 
 
 `;
