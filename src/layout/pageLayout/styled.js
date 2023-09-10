@@ -9,6 +9,10 @@ export const PageContainer = styled.div`
   
   //Doesn't move content on webpage when there's no scroll bar
   padding-left: calc(100vw - 100%);
+  ${mediaQuery.down.tablet} {
+    padding-left: 0px;
+  }
+
 
   display: grid;
   grid-template-columns:
