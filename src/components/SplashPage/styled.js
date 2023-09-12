@@ -15,8 +15,10 @@ export const LinkContainer = styled.div`
 
   ${mediaQuery.down.tablet} {
     padding-left: 10%;
-    letter-spacing: -10px;
-    font-size: 100px;
+    letter-spacing: -8px;
+    font-size: 85px;
+    background-color: ${themeColors.dark}
+
   }
 `;
 

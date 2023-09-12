@@ -16,6 +16,8 @@ export const NavBarStyled = styled.div`
 export const NavBarLogo = styled(Link)`
 display: inline-flex;
 font-family: ${themeFonts.brandFont};
+background-color:${themeColors.dark};
+margin-top: -2px;
 font-weight: 900;
 font-size: 80px;
 margin-left: 90px;
@@ -31,6 +33,6 @@ color: ${themeColors.font};
   }
 
   ${mediaQuery.down.tablet} {
-    margin-left: 10%;
+    margin-left: 5%;
   }
 `;

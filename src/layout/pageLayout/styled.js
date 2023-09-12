@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import {themeColors, themeFonts, mediaQuery} from "../../common/theme"
+import {themeColors, mediaQuery} from "../../common/theme"
 
 export const PageContainer = styled.div`
-  font-family: ${themeFonts.bodyFont};
   color: ${themeColors.font};
   background-color: ${themeColors.dark};
   height: 100%;
