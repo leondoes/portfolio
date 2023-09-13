@@ -15,8 +15,8 @@ export const LinkContainer = styled.div`
 
   ${mediaQuery.down.tablet} {
     padding-left: 10%;
-    letter-spacing: -8px;
-    font-size: 85px;
+    letter-spacing: -7px;
+    font-size: 10vh;
     background-color: ${themeColors.dark}
 
   }
@@ -145,4 +145,5 @@ export const PageContainer = styled.div`
   grid-template-columns: 50% 50%;
   background-color: ${themeColors.dark};
   height: 100vh;
+  overflow: hidden;
 `;
