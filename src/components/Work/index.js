@@ -7,12 +7,14 @@ const Work = () => (
     <PageContainer>
       <Title>A Showcase of My Web Dev Projects</Title>
       <Copy>
-        Welcome to my portfolio examples section, where I unveil my prowess as a
-        React developer. These projects are a testament to my commitment to
-        creating exceptional web applications that blend functionality with
-        aesthetics. Each example embodies a unique challenge I've conquered,
-        revealing my knack for transforming concepts into captivating digital
-        solutions. Dive in and be inspired!
+        Welcome to the portfolio examples section, where I present my
+        proficiency as a React developer. These projects serve as a
+        demonstration of my dedication to crafting exceptional web applications
+        that seamlessly integrate functionality with aesthetics. Each showcased
+        example represents a distinctive challenge I have successfully
+        addressed, highlighting my ability to translate concepts into compelling
+        digital solutions. Feel free to explore and draw inspiration from these
+        projects.
       </Copy>
       <Deck>
         <Card>
