@@ -1,6 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import {themeColors, themeFonts, mediaQuery} from "../../common/theme"
+import {
+  themeColors,
+  themeFonts,
+  mediaQuery,
+  fontStyles,
+} from "../../common/theme";
 
 export const LinkContainer = styled.div`
   font-family: ${themeFonts.brandFont};
@@ -17,8 +22,11 @@ export const LinkContainer = styled.div`
     padding-left: 10%;
     letter-spacing: -7px;
     font-size: 10vh;
-    background-color: ${themeColors.dark}
+    background-color: ${themeColors.dark};
+  }
 
+  ${mediaQuery.up.desktop} {
+    padding-left: 50%;
   }
 `;
 
@@ -138,6 +146,55 @@ export const Mugshot = styled.img`
   }
 
   
+`;
+
+const bounceAnimation = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+`;
+
+const fadeInAnimation = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+export const Indicator = styled.div`
+  ${fontStyles.Subtitle};
+  font-weight: 400;
+  pointer-events: none;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  padding-bottom: 80vh;
+  transition: padding-bottom 0.2s;
+  opacity: 0;
+  &:focus,
+  &:visited,
+  &:hover,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+
+  ${mediaQuery.down.tablet} {
+    font-size: 15px;
+    padding-bottom: 45vh;
+  }
+
+  animation: ${bounceAnimation} 2s infinite,
+    ${fadeInAnimation} 1s ease-in-out 5s 1 normal forwards;
 `;
 
 export const PageContainer = styled.div`

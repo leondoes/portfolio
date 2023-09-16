@@ -7,6 +7,7 @@ import {
   ContactLink,
   PageContainer,
   Mugshot,
+  Indicator
 } from "./styled";
 
 const getWorkLinkText = (workHover, contactHover) => {
@@ -37,7 +38,7 @@ const SplashPage = () => {
 
   return (
     <PageContainer>
-      <LinkContainer>
+      <LinkContainer><Indicator>click below</Indicator>
         <AboutLink
           onMouseEnter={() => setAboutHover(true)}
           onMouseLeave={() => setAboutHover(false)}
