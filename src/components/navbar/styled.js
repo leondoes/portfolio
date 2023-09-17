@@ -34,6 +34,5 @@ color: ${themeColors.font};
 
   ${mediaQuery.down.tablet} {
     margin-left: 5%;
-    font-size: 20vw;
   }
 `;
