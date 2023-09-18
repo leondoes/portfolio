@@ -1,6 +1,7 @@
 import React from "react";
 import PageLayout from "../../layout/PageLayout";
-import { PageContainer, Card, Deck, Title, Subtitle, Copy } from "./styled";
+import { PageContainer, Card, Deck, Title, Subtitle, Copy,Recreation } from "./styled";
+import recreation from "../../assets/ct_recreation.png";
 
 const Work = () => (
   <PageLayout>
@@ -31,6 +32,7 @@ const Work = () => (
                 numerous components serve as placeholders, I take pride in my
                 accomplishment of replicating the site and establishing a
                 functional storefront.
+                <Recreation src={recreation} alt="website recreation" />
               </div>
               <div>
                 As a secondary goal, I endeavored to construct the entire

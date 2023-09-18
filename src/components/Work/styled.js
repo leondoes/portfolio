@@ -35,3 +35,10 @@ export const Card = styled.div`
   margin-top: 100px;
   padding: 10px;
 `;
+
+export const Recreation = styled.img`
+display: flex;
+max-width:100%;
+margin-top:40px;
+margin-bottom:40px;
+`
