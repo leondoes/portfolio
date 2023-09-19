@@ -177,7 +177,7 @@ export const Indicator = styled.div`
   font-size: 20px;
   color: white;
   position: absolute;
-  padding-bottom: 60vh;
+  padding-bottom: 80vh;
   transition: padding-bottom 0.2s;
   opacity: 0;
   &:focus,
