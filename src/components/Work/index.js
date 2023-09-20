@@ -19,7 +19,12 @@ const Work = () => (
         projects.
       </Copy>
       <Deck>
-      <Card>{TanadianCire.Text}
+      <Card>
+      <Subtitle>{TanadianCire.SubTitle}</Subtitle>
+      <Copy>{TanadianCire.Body}</Copy>
+        <Recreation src={recreation} alt="website recreation" />
+        <Copy>{TanadianCire.body2}</Copy>
+        <Copy>{TanadianCire.body3}</Copy>
         </Card>
         <Card>
           <Copy>Hello</Copy>
