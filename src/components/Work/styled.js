@@ -20,11 +20,15 @@ ${fontStyles.Subtitle};
 
 export const Copy = styled.div`
 ${fontStyles.Copy};
+padding-top: 10px;
+padding-bottom: 10px;
 `;
 
 export const Deck = styled.div`
   color: ${themeColors.font};
-  font-family: ${themeFonts.bodyFont};  
+  font-family: ${themeFonts.bodyFont};
+  display: flex;
+  flex-direction: column;  
 `;
 
 export const Card = styled.div`
@@ -35,10 +39,3 @@ export const Card = styled.div`
   margin-top: 100px;
   padding: 10px;
 `;
-
-export const Recreation = styled.img`
-display: flex;
-max-width:100%;
-margin-top:40px;
-margin-bottom:40px;
-`

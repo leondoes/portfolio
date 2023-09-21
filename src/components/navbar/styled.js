@@ -33,6 +33,7 @@ color: ${themeColors.font};
   }
 
   ${mediaQuery.down.tablet} {
-    margin-left: 5%;
+    margin-left: 10%;
+    font-size: 60px;
   }
 `;

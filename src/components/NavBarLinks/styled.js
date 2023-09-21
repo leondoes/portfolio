@@ -11,7 +11,7 @@ export const LinkContainer = styled.div`
 export const StyledLink = styled(Link)`
 font-family: ${themeFonts.brandFont};
 font-weight: 700;
-font-size: 30px;
+font-size: 20px;
 color: ${themeColors.font};
 
   &:focus,
