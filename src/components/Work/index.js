@@ -1,6 +1,6 @@
 import React from "react";
 import PageLayout from "../../layout/PageLayout";
-import {TanadianCire} from "../../assets/strings.en.js"
+import { TanadianCire } from "../../assets/strings.en.js";
 import { PageContainer, Card, Deck, Title, Subtitle, Copy } from "./styled";
 import recreation from "../../assets/ct_recreation.png";
 import FullScreenImg from "../FullScreenImg";
@@ -20,12 +20,12 @@ const Work = () => (
         projects.
       </Copy>
       <Deck>
-      <Card>
-      <Subtitle>{TanadianCire.SubTitle}</Subtitle>
-      <Copy>{TanadianCire.Body}</Copy>
-      <FullScreenImg src={recreation}/>
-        <Copy>{TanadianCire.body2}</Copy>
-        <Copy>{TanadianCire.body3}</Copy>
+        <Card>
+          <Subtitle>{TanadianCire.SubTitle}</Subtitle>
+          <Copy>{TanadianCire.Body}</Copy>
+          <FullScreenImg src={recreation} alt="Recreation of the UI" description="UI recreation of the top bar" />
+          <Copy>{TanadianCire.body2}</Copy>
+          <Copy>{TanadianCire.body3}</Copy>
         </Card>
         <Card>
           <Copy>Hello</Copy>

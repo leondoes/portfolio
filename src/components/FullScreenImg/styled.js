@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { themeFonts} from "../../common/theme";
 
 export const ImageContainer = styled.div`
   position: relative;
@@ -33,3 +34,8 @@ export const OverlayImage = styled.img`
   max-width: 90%;
   max-height: 90%;
 `;
+
+export const Description = styled.div `
+font-family: ${themeFonts.brandFont};
+font-size: 10px;
+`

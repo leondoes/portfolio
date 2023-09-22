@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { ImageContainer, Image, Overlay, OverlayImage } from './styled'; // Update the import path
+import React, { useState } from "react";
+import { ImageContainer, Image, Overlay, OverlayImage, Description } from "./styled"; // Update the import path
 
-function FullScreenImg({ src }) {
+function FullScreenImg({ src, alt, description }) {
   const [fullscreen, setFullscreen] = useState(false);
 
   const toggleFullscreen = () => {
@@ -9,11 +9,15 @@ function FullScreenImg({ src }) {
   };
 
   return (
-    <ImageContainer className="image-container" onClick={toggleFullscreen}>
-      <Image src={src} alt="Fullscreen Image" />
+    <ImageContainer className={`image-container ${fullscreen ? "fullscreen" : ""}`} onClick={toggleFullscreen}>
+      <Image src={src} alt={alt} />
       <Overlay active={fullscreen}>
-        <OverlayImage src={src} alt="Fullscreen Image" />
+        <div className="fullscreen-content">
+          <OverlayImage src={src} alt={alt} />
+          {description && <Description>{description}</Description>}
+        </div>
       </Overlay>
+      {!fullscreen && description && <Description>{description}</Description>}
     </ImageContainer>
   );
 }
