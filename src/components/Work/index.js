@@ -3,7 +3,7 @@ import PageLayout from "../../layout/PageLayout";
 import { TanadianCire } from "../../assets/strings.en.js";
 import { PageContainer, Card, Deck, Title, Subtitle, Copy } from "./styled";
 import recreation from "../../assets/ct_recreation.png";
-import FullScreenImg from "../FullScreenImg";
+import FullScreenImg from "../../common/FullScreenImg";
 
 const Work = () => (
   <PageLayout>
