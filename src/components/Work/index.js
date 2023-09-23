@@ -4,6 +4,8 @@ import { TanadianCire } from "../../assets/strings.en.js";
 import { PageContainer, Card, Deck, Title, Subtitle, Copy } from "./styled";
 import recreation from "../../assets/ct_recreation.png";
 import FullScreenImg from "../../common/FullScreenImg";
+import AutoplayVideo from "../../common/AutoplayVideo";
+import sortingvideo from "../../assets/sort_shop.mp4";
 
 const Work = () => (
   <PageLayout>
@@ -25,6 +27,7 @@ const Work = () => (
           <Copy>{TanadianCire.Body}</Copy>
           <FullScreenImg src={recreation} alt="Recreation of the UI" description="UI recreation of the top bar" />
           <Copy>{TanadianCire.body2}</Copy>
+          <AutoplayVideo videoSource={sortingvideo}/> 
           <Copy>{TanadianCire.body3}</Copy>
         </Card>
         <Card>
