@@ -6,6 +6,7 @@ export const PageContainer = styled.div`
   background-color: ${themeColors.dark};
   height: 100%;
   
+
   //Doesn't move content on webpage when there's no scroll bar
   padding-left: calc(100vw - 100%);
   ${mediaQuery.down.tablet} {
@@ -16,7 +17,7 @@ export const PageContainer = styled.div`
   display: grid;
   grid-template-columns:
     1fr
-    min(100ch, 100%)
+    min(150ch, 100%)
     1fr;
   > * {
     grid-column: 2;
@@ -51,5 +52,17 @@ ${mediaQuery.down.tablet} {
     margin: 0px;
   }
 
+  @keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+animation: slideInFromBottom 0.8s ease-in-out;
 
 `;

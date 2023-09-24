@@ -36,6 +36,22 @@ export const fontStyles = {
   font-size: 70px;
   padding-bottom: 20vh;
   padding-top: 20vh;
+
+  @keyframes slideFromCenter {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+
+  animation: slideFromCenter 0.9s ease-in-out;
+
+
   ${mediaQuery.down.tablet} {
     font-size: 40px;
     letter-spacing: -1px;

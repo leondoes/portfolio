@@ -17,6 +17,7 @@ export const LinkContainer = styled.div`
   letter-spacing: -15px;
   font-size: 150px;
   font-weight: 700;
+  z-index: 2;
 
   ${mediaQuery.down.tablet} {
     padding-left: 10%;
@@ -136,6 +137,7 @@ export const ContactLink = styled(Link)`
 export const Mugshot = styled.img`
   max-width: 100vw;
   max-height: 100vh;
+  z-index: 1;
 
  ${mediaQuery.up.tablet} {
     justify-self: flex-end;
@@ -144,6 +146,20 @@ export const Mugshot = styled.img`
   ${mediaQuery.down.tablet} {
     display: none;
   }
+
+  @keyframes zoomIn {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+animation: zoomIn 1s ease-in-out forwards;
+
 
   
 `;
@@ -172,12 +188,12 @@ const fadeInAnimation = keyframes`
 
 export const Indicator = styled.div`
   ${fontStyles.Subtitle};
+  background-color: red;
   font-weight: 400;
   pointer-events: none;
   font-size: 20px;
   color: white;
-  position: absolute;
-  padding-bottom: 80vh;
+  padding: 0px 10px;
   transition: padding-bottom 0.2s;
   opacity: 0;
   &:focus,
@@ -190,7 +206,6 @@ export const Indicator = styled.div`
 
   ${mediaQuery.down.tablet} {
     font-size: 15px;
-    padding-bottom: 45vh;
   }
 
   animation: ${bounceAnimation} 2s infinite,
