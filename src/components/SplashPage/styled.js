@@ -188,7 +188,6 @@ const fadeInAnimation = keyframes`
 
 export const Indicator = styled.div`
   ${fontStyles.Subtitle};
-  background-color: red;
   font-weight: 400;
   pointer-events: none;
   font-size: 20px;
@@ -209,7 +208,7 @@ export const Indicator = styled.div`
   }
 
   animation: ${bounceAnimation} 2s infinite,
-    ${fadeInAnimation} 1s ease-in-out 5s 1 normal forwards;
+    ${fadeInAnimation} 1s ease-in-out 0.3s 1 normal forwards;
 `;
 
 export const PageContainer = styled.div`
