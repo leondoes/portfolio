@@ -57,6 +57,34 @@ export const fontStyles = {
     letter-spacing: -1px;
   }`,
 
+  Smallcaps: `font-weight: 900;
+
+  color: ${themeColors.font};
+  letter-spacing: -2px;
+  font-size: 70px; font-variant: small-caps;
+  margin-top: 20vh;
+  width: fit-content;
+
+  @keyframes slideFromCenter {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+
+  animation: slideFromCenter 0.9s ease-in-out;
+
+
+  ${mediaQuery.down.tablet} {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }`,
+
   Subtitle: `font-weight: 700;
   color: ${themeColors.font};
   font-family: ${themeFonts.brandFont};
