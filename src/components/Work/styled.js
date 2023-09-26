@@ -38,6 +38,11 @@ export const ScrollDownDesc = styled.div`
   margin-top: -17px;
   letter-spacing: 0px;
   font-variant: none;
+
+  ${mediaQuery.down.tablet} {
+    font-size:12px;
+    margin-top: -12px;
+  }
 `;
 
 export const Copy = styled.div`

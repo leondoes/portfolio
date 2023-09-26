@@ -40,17 +40,16 @@ const Work = () => {
       <PageContainer>
         <Title>A Showcase of My Web Dev Projects</Title>
         <Copy>
-          Welcome to the portfolio examples section, where I present my
-          proficiency as a React developer. These projects serve as a
-          demonstration of my dedication to crafting exceptional web
-          applications that seamlessly integrate functionality with aesthetics.
-          Each showcased example represents a distinctive challenge I have
-          successfully addressed, highlighting my ability to translate concepts
-          into compelling digital solutions. Feel free to explore and draw
-          inspiration from these projects.
+          These projects showcase my skills in crafting functional and visually
+          appealing web applications, demonstrating my ability to tackle unique
+          challenges and create compelling digital solutions. Feel free to
+          explore and get inspired by them.
         </Copy>
         <ScrollDownLink onClick={scrollToTarget}>
-          Tanadian Cire <ScrollDownDesc>Storefront mockup with sorting feature</ScrollDownDesc>
+          Tanadian Cire{" "}
+          <ScrollDownDesc>
+            Storefront mockup with sorting feature
+          </ScrollDownDesc>
         </ScrollDownLink>
         <Deck>
           <Card>
