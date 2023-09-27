@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const VideoContainer = styled.div`
-  width: 100%; /* Set a fixed width */
+  width: auto; /* Set a fixed width */
   height: 500px; /* Set a fixed height for a 1:1 aspect ratio */
   position: relative;
   overflow: hidden; /* Hide overflow to prevent flickering */
