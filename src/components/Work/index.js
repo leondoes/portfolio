@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import PageLayout from "../../layout/PageLayout";
 import { TanadianCire } from "../../assets/strings.en.js";
 import {
@@ -7,7 +7,6 @@ import {
   Deck,
   Title,
   ScrollDownLink,
-  ScrollToTarget,
   ScrollDownDesc,
   Subtitle,
   Copy,
@@ -18,19 +17,12 @@ import AutoplayVideo from "../../common/AutoplayVideo";
 import sortingvideo from "../../assets/sort_shop.mp4";
 
 const Work = () => {
-  const scrollTargetRef = useRef(null);
-
-  const scrollToTarget = () => {
-    if (scrollTargetRef.current) {
-      const navBarHeight = 130;
-      const targetTop =
-        scrollTargetRef.current.getBoundingClientRect().top +
-        window.scrollY -
-        navBarHeight;
-
-      window.scrollTo({
-        top: targetTop,
+  const scrollIntoView = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -45,17 +37,21 @@ const Work = () => {
           challenges and create compelling digital solutions. Feel free to
           explore and get inspired by them.
         </Copy>
-        <ScrollDownLink onClick={scrollToTarget}>
-          Tanadian Cire{" "}
+        <ScrollDownLink onClick={() => scrollIntoView("TanadianCire")}>
+          Tanadian Cire
+          <ScrollDownDesc>
+            Storefront mockup with sorting feature
+          </ScrollDownDesc>
+        </ScrollDownLink>
+        <ScrollDownLink onClick={() => scrollIntoView("test")}>
+          Tanadian Cire
           <ScrollDownDesc>
             Storefront mockup with sorting feature
           </ScrollDownDesc>
         </ScrollDownLink>
         <Deck>
-          <Card>
-            <ScrollToTarget>
-              <Subtitle ref={scrollTargetRef}>{TanadianCire.SubTitle}</Subtitle>
-            </ScrollToTarget>
+          <Card id="TanadianCire">
+            <Subtitle>{TanadianCire.SubTitle}</Subtitle>
             <Copy>{TanadianCire.Body}</Copy>
             <FullScreenImg
               src={recreation}
@@ -66,7 +62,7 @@ const Work = () => {
             <AutoplayVideo videoSource={sortingvideo} />
             <Copy>{TanadianCire.body3}</Copy>
           </Card>
-          <Card>
+          <Card id="test">
             <Copy>Hello</Copy>
           </Card>
         </Deck>

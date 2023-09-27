@@ -21,6 +21,7 @@ export const Title = styled.div`
 
 export const Subtitle = styled.div`
   ${fontStyles.Subtitle};
+  scroll-margin-top: 150px;
 `;
 
 export const ScrollDownLink = styled.div`
@@ -28,7 +29,8 @@ export const ScrollDownLink = styled.div`
   cursor: pointer;
 `;
 
-export const ScrollToTarget = styled.div``;
+export const ScrollToTarget = styled.div`
+`;
 
 export const ScrollDownDesc = styled.div`
   font-family: ${themeFonts.bodyFont};
@@ -66,4 +68,5 @@ export const Card = styled.div`
   margin-bottom: 100px;
   margin-top: 100px;
   padding: 10px;
+  scroll-margin:100px; //Needed for scroll links to adjust for navbar height
 `;
