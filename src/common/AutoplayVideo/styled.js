@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 
 export const VideoContainer = styled.div`
-  width: auto; /* Set a fixed width */
-  height: 500px; /* Set a fixed height for a 1:1 aspect ratio */
+  width: 100%;
+  height: 100%;
   position: relative;
-  overflow: hidden; /* Hide overflow to prevent flickering */
+  overflow: hidden;
   opacity: ${({ isVideoLoaded }) => (isVideoLoaded ? '1' : '0')};
-  transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+  transition: opacity 0.3s ease;
 `;
 
 export const Video = styled.video`
@@ -16,5 +16,4 @@ export const Video = styled.video`
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
 `;
