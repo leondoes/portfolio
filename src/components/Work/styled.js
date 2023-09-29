@@ -24,29 +24,6 @@ export const Subtitle = styled.div`
   scroll-margin-top: 150px;
 `;
 
-export const ScrollDownLink = styled.div`
-  ${fontStyles.Smallcaps};
-  cursor: pointer;
-`;
-
-export const ScrollToTarget = styled.div`
-`;
-
-export const ScrollDownDesc = styled.div`
-  font-family: ${themeFonts.bodyFont};
-  color: ${themeColors.brand};
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: -17px;
-  letter-spacing: 0px;
-  font-variant: none;
-
-  ${mediaQuery.down.tablet} {
-    font-size:12px;
-    margin-top: -12px;
-  }
-`;
-
 export const Copy = styled.div`
   ${fontStyles.Copy};
   padding-top: 10px;
