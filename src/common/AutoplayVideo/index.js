@@ -9,7 +9,7 @@ const AutoplayVideo = ({ videoSource }) => {
     if (videoRef.current) {
       videoRef.current.autoplay = true;
       videoRef.current.muted = true;
-      videoRef.current.controls = false;
+      videoRef.current.controls = true;
       videoRef.current.loop = true;
       videoRef.current.setAttribute("playsinline", "true");
       videoRef.current.addEventListener("loadedmetadata", () => {
