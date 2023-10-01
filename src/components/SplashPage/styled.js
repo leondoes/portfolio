@@ -48,7 +48,7 @@ export const AboutLink = styled(Link)`
     }
   }
 
-  animation: 0.3s ease-out 0.2s 1 slideInBottom;
+  animation: 0.4s ease-out 0.2s 1 slideInBottom;
   animation-fill-mode: forwards;
   visibility: hidden;
 
@@ -82,7 +82,7 @@ export const WorkLink = styled(Link)`
     }
   }
 
-  animation: 0.3s ease-out 1s 1 slideInBottom;
+  animation: 0.4s ease-out 0.7s 1 slideInBottom;
   animation-fill-mode: forwards;
   visibility: hidden;
 
@@ -115,7 +115,7 @@ export const ContactLink = styled(Link)`
     }
   }
 
-  animation: 0.3s ease-out 2s 1 slideInBottom;
+  animation: 0.4s ease-out 1.3s 1 slideInBottom;
   animation-fill-mode: forwards;
   visibility: hidden;
 
