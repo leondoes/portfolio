@@ -28,7 +28,13 @@ export const Copy = styled.div`
   ${fontStyles.Copy};
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 16px;
 `;
+
+export const TopCopy = styled.div`
+${fontStyles.Copy};
+padding-bottom:20px;
+`
 
 export const Deck = styled.div`
   color: ${themeColors.font};
@@ -41,6 +47,7 @@ export const Card = styled.div`
   -moz-box-shadow: 0 0 15px #5d5f61;
   -webkit-box-shadow: 0 0 15px #5d5f61;
   box-shadow: 0 0 15x #5d5f61;
+  border-radius: 10px;
   background-color: #070708;
   margin-bottom: 100px;
   margin-top: 100px;
