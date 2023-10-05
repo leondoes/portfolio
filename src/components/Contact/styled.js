@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 import { themeFonts, mediaQuery, fontStyles } from "../../common/theme";
 
 export const PageContainer = styled.div `
@@ -22,14 +23,26 @@ export const Copy = styled.div`
 ${fontStyles.Copy};
 `;
 
-export const EmailContainer = styled.div `
+export const EmailVerified = styled(Link) `
+`;
+
+export const EmailContainer = styled.div`
+font-family: ${themeFonts.brandFont};
+display: flex;
+font-weight: 900;
+font-size: 5vh;
+height: 80px;
+justify-content: center;
+align-items: center;
+`;
+export const GitHubContainer = styled.div`
 font-family: ${themeFonts.brandFont};
 margin: auto;
 display: flex;
 font-weight: 900;
 font-size: 5vh;
 cursor: pointer;
-`;
+`
 
 export const GitHubLogo = styled.img `
 width: 5vh;

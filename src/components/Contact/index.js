@@ -7,8 +7,11 @@ import {
   Copy,
   Subtitle,
   GitHubLogo,
+  GitHubContainer,
+  EmailVerified
 } from "./styled";
 import github from "../../assets/github_white.png";
+import EmailReCAPTCHA from "../../common/EmailReCAPTCHA";
 
 const Contact = () => (
   <PageLayout /*style={{ height: "100vh" }}*/>
@@ -30,19 +33,21 @@ const Contact = () => (
         </div>
       </Copy>
       <Subtitle>Let's build something amazing together!</Subtitle>
-      <EmailContainer
+      <EmailContainer>📧
+      <EmailVerified
         onClick={() =>
           (window.location.href = "mailto:leondoes.contact@gmail.com")
         }
       >
-        📧Email
+        <EmailReCAPTCHA/>
+      </EmailVerified>
       </EmailContainer>
-      <EmailContainer
+      <GitHubContainer
         onClick={() => (window.location.href = "https://github.com/leondoes")}
       >
         <GitHubLogo src={github} alt="GitHub Logo" />
         GitHub
-      </EmailContainer>
+      </GitHubContainer>
     </PageContainer>
   </PageLayout>
 );
