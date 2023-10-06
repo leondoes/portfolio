@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {themeFonts, themeColors} from "../../common/theme"
+import {themeFonts, themeColors, mediaQuery} from "../../common/theme"
 
 
 export const LinkContainer = styled.div`
@@ -24,6 +24,10 @@ color: ${themeColors.font};
 
   &:hover {
     color: ${themeColors.brand};
+  }
+
+  ${mediaQuery.down.tablet} {
+    font-size: 30px;
   }
 
 `;

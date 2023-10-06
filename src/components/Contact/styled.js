@@ -34,6 +34,10 @@ font-size: 5vh;
 height: 80px;
 justify-content: center;
 align-items: center;
+${mediaQuery.down.tablet} {
+    font-size: 20px;
+  }
+
 `;
 export const GitHubContainer = styled.div`
 font-family: ${themeFonts.brandFont};
