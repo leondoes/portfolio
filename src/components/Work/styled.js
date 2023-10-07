@@ -28,11 +28,12 @@ export const Copy = styled.div`
   ${fontStyles.Copy};
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 17px;
 `;
 
 export const TopCopy = styled.div`
 ${fontStyles.Copy};
+margin-top: -100px;
 padding-bottom:20px;
 `
 
@@ -54,3 +55,14 @@ export const Card = styled.div`
   padding: 10px;
   scroll-margin:100px; //Needed for scroll links to adjust for navbar height
 `;
+
+export const SideBySide = styled.div`
+display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-gap: 10px;
+`;
+
+export const Img = styled.img`
+display: flex;
+width: 300px;
+`

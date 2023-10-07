@@ -1,12 +1,28 @@
 import React from "react";
 import PageLayout from "../../layout/PageLayout";
 import { TanadianCire } from "../../assets/strings.en.js";
-import { PageContainer, Card, Deck, Title, Subtitle, Copy,TopCopy } from "./styled";
+import {
+  PageContainer,
+  Card,
+  Deck,
+  Title,
+  Subtitle,
+  Copy,
+  TopCopy,
+  SideBySide,
+  Img,
+} from "./styled";
+
 import recreation from "../../assets/ct_recreation.png";
+import ct_structure from "../../assets/ct_structure.png";
+import ct_productgridcode from "../../assets/ct_productgridcode.png";
+import CodeSandbox_logo from "../../assets/CodeSandbox_logo.png";
+
 import FullScreenImg from "../../common/FullScreenImg";
 import AutoplayVideo from "../../common/AutoplayVideo";
 import sortingvideo from "../../assets/sort_shop.mp4";
 import ScrollToSection from "../../common/ScrollToSection";
+
 
 const Work = () => (
   <PageLayout>
@@ -44,14 +60,32 @@ const Work = () => (
             alt="Recreation of the UI"
             description="UI recreation of the top bar"
           />
-          <Copy>{TanadianCire.body2}</Copy>
+          <Copy>{TanadianCire.Body1}</Copy>
+          <Copy>{TanadianCire.Body2}</Copy>
+          <SideBySide>
+            <FullScreenImg
+              src={ct_structure}
+              alt="Picture of the structure of TC code"
+              description=""
+            />
+            <FullScreenImg
+              src={ct_productgridcode}
+              alt="Picture of the product grid code"
+              description=" The product grid component populates the page with each product in a card."
+            />
+          </SideBySide>
+          <Copy>{TanadianCire.Body3}</Copy>
           <AutoplayVideo videoSource={sortingvideo} />
-          <Copy>{TanadianCire.body3}</Copy>
-
-            <ScrollToSection targetId="top" description="">
-              <TopCopy>Return</TopCopy>
-            </ScrollToSection>
-
+          <Copy>{TanadianCire.Body4}</Copy>
+          <Copy>
+            You can find the project at
+            <a href="https://codesandbox.io/s/serene-voice-316qhh">
+              <Img src={CodeSandbox_logo}/>
+            </a>
+          </Copy>
+          <ScrollToSection targetId="top" description="">
+            <TopCopy>Return</TopCopy>
+          </ScrollToSection>
         </Card>
         <Card id="test">
           <Copy>Hello</Copy>
