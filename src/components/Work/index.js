@@ -1,6 +1,6 @@
 import React from "react";
 import PageLayout from "../../layout/PageLayout";
-import { TanadianCire } from "../../assets/strings.en.js";
+import { TanadianCire, ProfileNav } from "../../assets/strings.en.js";
 import {
   PageContainer,
   Card,
@@ -44,10 +44,10 @@ const Work = () => (
         Tanadian Cire
       </ScrollToSection>
       <ScrollToSection
-        targetId="test"
-        description="Another section description"
+        targetId="Profile"
+        description="Simple profile menu recreated in REACT"
       >
-        Another Section
+        Profile Menu
       </ScrollToSection>
       {/* ScrollToSection Component */}
 
@@ -87,8 +87,12 @@ const Work = () => (
             <TopCopy>Return</TopCopy>
           </ScrollToSection>
         </Card>
-        <Card id="test">
-          <Copy>Hello</Copy>
+        <Card id="Profile">
+          <Subtitle>{ProfileNav.Subtitle}</Subtitle>
+          <Copy>{ProfileNav.Body}</Copy>
+          <ScrollToSection targetId="top" description="">
+            <TopCopy>Return</TopCopy>
+          </ScrollToSection>
         </Card>
       </Deck>
     </PageContainer>
