@@ -78,8 +78,8 @@ const Work = () => (
           <AutoplayVideo videoSource={sortingvideo} />
           <Copy>{TanadianCire.Body4}</Copy>
           <Copy>
-            You can find the project at
-            <a href="https://codesandbox.io/s/serene-voice-316qhh">
+            You can find the Product List Page at
+            <a href="https://316qhh.csb.app/ProductListPage" target="_blank" rel="noreferrer">
               <Img src={CodeSandbox_logo}/>
             </a>
           </Copy>
@@ -90,6 +90,12 @@ const Work = () => (
         <Card id="Profile">
           <Subtitle>{ProfileNav.Subtitle}</Subtitle>
           <Copy>{ProfileNav.Body}</Copy>
+          <Copy>
+            You can find the Profile Menu at
+            <a href="https://61c1jf.csb.app/" target="_blank" rel="noreferrer">
+              <Img src={CodeSandbox_logo}/>
+            </a>
+          </Copy>
           <ScrollToSection targetId="top" description="">
             <TopCopy>Return</TopCopy>
           </ScrollToSection>
