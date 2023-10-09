@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ae111aee.css",
-    "main.js": "/portfolio/static/js/main.9e433dfa.js",
+    "main.js": "/portfolio/static/js/main.59cd29a9.js",
     "static/media/sort_shop.mp4": "/portfolio/static/media/sort_shop.128dd5f9cabd929fd406.mp4",
     "static/media/mugshot.png": "/portfolio/static/media/mugshot.ce92ce2fab2155c246f9.png",
     "static/media/CodeSandbox_logo.png": "/portfolio/static/media/CodeSandbox_logo.98192cd3e11858a5a7ec.png",
@@ -9,10 +9,10 @@
     "static/media/ct_recreation.png": "/portfolio/static/media/ct_recreation.b084b3b63a15d6434c64.png",
     "static/media/ct_structure.png": "/portfolio/static/media/ct_structure.9aeb3654dc1c55625a80.png",
     "index.html": "/portfolio/index.html",
-    "main.9e433dfa.js.map": "/portfolio/static/js/main.9e433dfa.js.map"
+    "main.59cd29a9.js.map": "/portfolio/static/js/main.59cd29a9.js.map"
   },
   "entrypoints": [
     "static/css/main.ae111aee.css",
-    "static/js/main.9e433dfa.js"
+    "static/js/main.59cd29a9.js"
   ]
 }
