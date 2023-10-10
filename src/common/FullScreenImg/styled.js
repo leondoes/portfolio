@@ -4,9 +4,17 @@ import { themeFonts } from "../theme";
 export const ImageContainer = styled.div`
   position: relative;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Image = styled.img`
+  -moz-box-shadow: 0 0 10px #5d5f61;
+  -webkit-box-shadow: 0 0 10px #5d5f61;
+  box-shadow: 0 0 10x #5d5f61;
+  border-radius: 10px;
+  align-self: center;
+  padding: auto;
   max-width: 100%;
   max-height: 100%;
   border: 1px solid black;
@@ -45,4 +53,5 @@ export const OverlayImage = styled.img`
 export const Description = styled.div`
   font-family: ${themeFonts.brandFont};
   font-size: 10px;
+  align-self:center;
 `;

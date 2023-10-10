@@ -23,12 +23,11 @@ export const TanadianCire = {
 };
 
 export const ProfileNav = {
-  Subtitle: `Profile Navigation Menu`,
-  Body: `Profile navigation in React, the mystical art of turning ancient HTML hieroglyphics into sleek, modern React components, is a journey through the quantum realms of web development. As you embark on this odyssey, you'll find yourself traversing the labyrinthine corridors of the virtual DOM, armed only with your trusty JSX sword and a shield made of state management patterns.
+  Subtitle: `Profile Menu`,
+  Body: `The Profile Menu project was a contracted assignment that I undertook. The client had an existing profile page built in HTML, and they were in the process of upgrading their website. They reached out to me to convert and enhance their profile menu.`,
+  Body1: `The task was relatively straightforward, and I successfully completed the project in approximately 8 hours of work. The component operates by utilizing React state to determine what to display in the main view based on the user's selection from the menu. It retrieves the displayed information from the back-end. I provided the client with all the necessary components to seamlessly integrate the profile menu into their upgraded website. The end result is identical to their previous HTML build, but now utilizing React state and functionality, allowing for better integration with the rest of their website.`,
+  Body2: `As the project involved sensitive client data, I respect their decision to maintain code privacy. However, I've included a demo of the profile menu in my portfolio to showcase its functionality. You can explore the demo below to get a glimpse of the features and capabilities of this component.`,
+};
 
-  Picture this: you're riding a virtual hoverboard down the corridors of your old HTML codebase, dodging HTML tables that have mysteriously transformed into nested divs. You come across a cryptic comment that reads, "Beware the spaghetti code." Ignoring the warning, you bravely refactor the tangled mess into a pristine React component, complete with hooks and props that seem to materialize out of thin air.
-  
-  But the adventure doesn't stop there. You stumble upon a treasure chest of CSS classes that have been renamed in camelCase, as if the code itself is playing a game of hide and seek. Undeterred, you wield the power of styled-components to tame these unruly styles, bringing order to chaos.
-  
-  As you emerge from the depths of your HTML-to-React conversion quest, you realize that profile navigation in React is like a magic incantation that turns dusty old web relics into dynamic, interactive components. It's a journey that requires equal parts skill, patience, and a sprinkle of whimsy to decode the enigmatic dance of tags and props.`
-}
+
+

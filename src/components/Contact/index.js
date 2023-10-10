@@ -35,15 +35,17 @@ const Contact = () => (
       <Subtitle>Let's build something amazing together!</Subtitle>
       <EmailContainer>📧
       <EmailVerified
-        onClick={() =>
-          (window.location.href = "mailto:leondoes.contact@gmail.com")
-        }
+        onClick={() => {
+          window.open("mailto:leondoes.contact@gmail.com", "_blank", "noopener,noreferrer");
+        }}
       >
         <EmailReCAPTCHA/>
       </EmailVerified>
       </EmailContainer>
       <GitHubContainer
-        onClick={() => (window.location.href = "https://github.com/leondoes")}
+        onClick={() => {
+          window.open("https://github.com/leondoes", "_blank", "noopener,noreferrer");
+        }}
       >
         <GitHubLogo src={github} alt="GitHub Logo" />
         GitHub
