@@ -51,6 +51,13 @@ const Work = () => (
       >
         Profile Menu
       </ScrollToSection>
+
+      <ScrollToSection
+        targetId=""
+        description="React based weather application"
+      >
+        ReactRain - Coming Soon
+      </ScrollToSection>
       {/* ScrollToSection Component */}
 
       <Deck>
