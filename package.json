@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
-  "version": "0.1.4",
-  "homepage": "https://leondoes.github.io/portfolio/",
+  "name": "reactrain",
+  "version": "0.0.1",
+  "homepage": "https://leondoes.github.io/reactrain/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,7 +11,7 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-router-dom": "^6.4.5",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },

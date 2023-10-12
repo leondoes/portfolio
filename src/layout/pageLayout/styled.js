@@ -1,17 +1,13 @@
 import styled from "styled-components";
-import {themeColors, mediaQuery} from "../../common/theme"
 
 export const PageContainer = styled.div`
-  color: ${themeColors.font};
-  background-color: ${themeColors.dark};
-  height: 100%;
+color: blue;
+  background-color: white;
+  height: 100vh;
   
 
   //Doesn't move content on webpage when there's no scroll bar
   padding-left: calc(100vw - 100%);
-  ${mediaQuery.down.tablet} {
-    padding-left: 0px;
-  }
 
 
   display: grid;
@@ -26,7 +22,7 @@ export const PageContainer = styled.div`
   &:before {
     content: "";
     position:sticky;
-    background-color: ${themeColors.dark};
+    background-color: blue;
     grid-row: 1;
     grid-column: 1;
     top: 0;
@@ -35,7 +31,7 @@ export const PageContainer = styled.div`
   &:after {
     content: "";
     position: sticky;
-    background-color: ${themeColors.dark};
+    background-color: red;
     grid-row: 1;
     grid-column: 3;
     z-index: 2;
@@ -48,9 +44,6 @@ export const ContentContainer = styled.div`
 display: flex;
 margin: 30px 100px 30px 100px;
 
-${mediaQuery.down.tablet} {
-    margin: 0px;
-  }
 
   @keyframes slideInFromBottom {
   0% {

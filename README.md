@@ -1,3 +1,5 @@
-Leondoes.
+React Rain.
 
-My portfolio website.
+A weather app built in React.js
+
+by leondoes.
