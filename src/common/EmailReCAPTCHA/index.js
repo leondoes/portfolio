@@ -14,7 +14,7 @@ const EmailReCAPTCHA = () => {
     <div>
       {!verified && (
         <ReCAPTCHA
-          sitekey="6LfUt3QoAAAAAO2pI8CRS2bVPqBY3EZP-0rtXXhi"
+          sitekey={process.env.REACT_APP_RECAPTCHA_SECRET_KEY}
           onChange={onChange}
           theme="dark"
         />
