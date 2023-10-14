@@ -23,7 +23,7 @@ jobs:
         REACT_APP_RECAPTCHA_SECRET_KEY: ${{ secrets.REACT_APP_RECAPTCHA_SECRET_KEY }}
 
     - name: Deploy
-      uses: leondoes/portfolio@releases/
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
