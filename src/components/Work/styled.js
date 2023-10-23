@@ -48,7 +48,7 @@ export const Card = styled.div`
   -moz-box-shadow: 0 0 15px #5d5f61;
   -webkit-box-shadow: 0 0 15px #5d5f61;
   box-shadow: 0 0 15x #5d5f61;
-  border-radius: 10px;
+  border-radius: 18px;
   background-color: #070708;
   margin-bottom: 100px;
   margin-top: 100px;
@@ -66,3 +66,22 @@ export const Img = styled.img`
 display: flex;
 width: 300px;
 `
+
+export const GitHubContainer = styled.div`
+font-family: ${themeFonts.brandFont};
+display: flex;
+font-weight: 600;
+font-size: 5vh;
+cursor: pointer;
+margin-right:59%;
+`
+
+export const GitHubLogo = styled.img `
+width: 5vh;
+height: 5vh;
+padding-right: 10px;
+`
+
+export const gutHubPages = styled.img `
+
+`;

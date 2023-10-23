@@ -12,7 +12,7 @@ export const Image = styled.img`
   -moz-box-shadow: 0 0 10px #5d5f61;
   -webkit-box-shadow: 0 0 10px #5d5f61;
   box-shadow: 0 0 10x #5d5f61;
-  border-radius: 10px;
+  border-radius: 18px;
   align-self: center;
   padding: auto;
   max-width: 100%;

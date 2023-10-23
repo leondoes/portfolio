@@ -29,5 +29,13 @@ export const ProfileNav = {
   Body2: `As the project involved sensitive client data, I respect their decision to maintain code privacy. However, I've included a demo of the profile menu in my portfolio to showcase its functionality. You can explore the demo below to get a glimpse of the features and capabilities of this component.`,
 };
 
+export const ReactRain = {
+  Subtitle: `ReactRain`,
+  Body: `ReactRain is a small weather application that allows users to retrieve up-to-date weather information for a city of their choice. This app serves as a practical demonstration of how to utilize an external weather API and display the resulting data in a user-friendly format.`,
+  Body1: `Upon entering a city name, ReactRain fetches and sorts through the JSON data received from a weather API, providing users with valuable weather details such as temperature, humidity, precipitation, and wind speed. It also displays a 2-day weather forecast for the selected location, offering a comprehensive overview of the weather conditions.`,
+  Body2: `In addition, what sets ReactRain apart is its well-structured code, making it a valuable addition to any developer's portfolio. The code is organized, modular, and easy to understand, demonstrating best practices in React application development. Additionally, ReactRain features a responsive design, ensuring it can seamlessly fit into any website or mobile application, providing a consistent and visually pleasing weather experience on various devices.`
+}
+
+
 
 
