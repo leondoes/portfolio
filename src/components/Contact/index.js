@@ -20,7 +20,7 @@ const Contact = () => (
 
       <Copy>
         <div>
-          I'm excited to hear about your REACT project and how I can contribute
+          I'm excited to hear about your project and how I can contribute
           to its success. Whether you're a startup looking to build a new web
           application or a business seeking to enhance an existing one, I'm here
           to turn your vision into reality.
