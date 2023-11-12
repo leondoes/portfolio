@@ -1,5 +1,5 @@
 export const TanadianCire = {
-  SubTitle: `Tanadian Cire`,
+  Subtitle: `Tanadian Cire`,
   Body: `
   The Tanadian Cire store page marked a significant milestone in my journey as a developer. 
   It was the first major project I tackled independently, without relying on tutorials or courses. 

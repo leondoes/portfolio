@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { themeFonts, themeColors, fontStyles,mediaQuery } from "../theme";
 
-export const ScrollDownLink = styled.div`
+export const ToggleLink = styled.div`
   ${fontStyles.Smallcaps};
   cursor: pointer;
 `;
 
-export const ScrollDownDesc = styled.div`
+export const ToggleDesc = styled.div`
   font-family: ${themeFonts.bodyFont};
   color: ${themeColors.brand};
   font-size: 20px;

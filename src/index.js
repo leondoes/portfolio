@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { StrictMode } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from './common/ScrollToTop';
 
 import App from './App';
 import About from './components/About';
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
     <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+      <ScrollToTop />
     <Routes>
     <Route path="" element={<App />} />
     <Route path="about" element={<About />} />
@@ -20,6 +22,3 @@ root.render(
     </BrowserRouter>
   </StrictMode>
 );
-
-
-
