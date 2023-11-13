@@ -34,7 +34,16 @@ export const ReactRain = {
   Body: `ReactRain is a small weather application that allows users to retrieve up-to-date weather information for a city of their choice. This app serves as a practical demonstration of how to utilize an external weather API and display the resulting data in a user-friendly format.`,
   Body1: `Upon entering a city name, ReactRain fetches and sorts through the JSON data received from a weather API, providing users with valuable weather details such as temperature, humidity, precipitation, and wind speed. It also displays a 2-day weather forecast for the selected location, offering a comprehensive overview of the weather conditions.`,
   Body2: `In addition, what sets ReactRain apart is its well-structured code, making it a valuable addition to any developer's portfolio. The code is organized, modular, and easy to understand, demonstrating best practices in React application development. Additionally, ReactRain features a responsive design, ensuring it can seamlessly fit into any website or mobile application, providing a consistent and visually pleasing weather experience on various devices.`
-}
+};
+
+export const ReviewsAndQuestions = {
+  Subtitle: `Reviews & Questions`,
+  Body: `The "Reviews & Questions" project, a contract task completed for Mejuri, an online jewelry e-commerce store, was a challenging yet rewarding experience. My objective was to rebuild their Yotpo module, focusing on enhancing page load speeds, SEO, and conversion rates, all within a 15-hour timeframe.`,
+  Body1: `The project involved reengineering Yotpo's existing modules, which, while powerful in leveraging customer reviews for engagement and sales, often suffered from slow website performance due to analytics and overly generic code. This task required careful attention to detail and a deep understanding of the module's impact on website efficiency.`,
+  Body2: `By rewriting the component, I was able to integrate it seamlessly with the site's existing codebase, avoiding the performance issues associated with external modules. This code-sharing approach not only optimized performance but also maintained the website's aesthetic and functional consistency.`,
+  Body3: `In the portfolio demo, I crafted a mock version of the component to responsibly avoid real API calls on behalf of Mejuri. This rendition meticulously fetches the first 10 customer reviews and questions, mirroring Mejuri's actual functionality. The mock-up meticulously replicates the pagination, question form, and overall ratings components, ensuring everything is identical to Mejuri's implementation. Moreover, I've placed a strong emphasis on responsiveness, ensuring that the component adapts seamlessly across various devices and screen sizes. This demo, complete with a 'phone view' and diverse testing controls, showcases not just the functionality, but also the precision and attention to detail in my development approach, inviting users to engage with a component that blends seamlessly with Mejuri's established web presence.`
+
+};
 
 
 
