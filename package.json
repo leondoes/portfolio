@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "homepage": "https://leondoes.github.io/portfolio/",
   "private": true,
   "dependencies": {
