@@ -15,6 +15,9 @@ export const NavBarStyled = styled.div`
 `;
 
 export const NavBarLogo = styled(Link)`
+ -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 display: inline-flex;
 font-family: ${themeFonts.brandFont};
 background-color: none;

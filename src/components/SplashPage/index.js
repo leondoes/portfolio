@@ -27,8 +27,21 @@ const getWorkLinkText = (workHover, contactHover) => {
 
 
 const SplashPage = () => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   useEffect(() => {
     document.title = "leondoes.";
+    const image = new Image();
+    image.src = img;
+    image.onload = () => setIsImageLoaded(true);
+    image.onerror = () => {
+      console.error("Failed to load image.");
+      // Handle image load failure here
+    };
+
+    if (image.complete) {
+      setIsImageLoaded(true);
+    }
   }, []);
 
   const [aboutHover, setAboutHover] = useState(false);
@@ -38,6 +51,8 @@ const SplashPage = () => {
 
   return (
     <PageContainer>
+      {isImageLoaded ? (
+        <>
       <LinkContainer><Indicator>click below</Indicator>
         <AboutLink
           onMouseEnter={() => setAboutHover(true)}
@@ -61,9 +76,16 @@ const SplashPage = () => {
           {contactHover ? `Contact` : <div style={{display: "flex"}}>leon<div style={{color:"#ff311b"}}>does.</div></div>} 
         </ContactLink>
       </LinkContainer>
-      <Mugshot src={img} alt="portrait" />
+      <Mugshot
+            src={img}
+            alt="portrait"
+            onLoad={() => setIsImageLoaded(true)}
+          />
+        </>
+      ) : (
+        <div></div> // Your loading indicator here
+      )}
     </PageContainer>
   );
 };
-
 export default SplashPage;
