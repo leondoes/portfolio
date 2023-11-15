@@ -9,6 +9,9 @@ import {
 
 export const LinkContainer = styled.div`
   font-family: ${themeFonts.brandFont};
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: center;

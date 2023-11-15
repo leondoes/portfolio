@@ -62,7 +62,7 @@ export const fontStyles = {
   color: ${themeColors.font};
   letter-spacing: -2px;
   font-size: 70px; font-variant: small-caps;
-  margin-top: 20vh;
+  margin-bottom: 10vh;
   width: fit-content;
 
   @keyframes slideFromCenter {

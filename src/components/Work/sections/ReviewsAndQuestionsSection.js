@@ -5,7 +5,7 @@ import { Drawer } from '../styled';
 
 const ReviewsAndQuestionsSection = ({ isOpen, toggleSection, closeSection }) => (
   <>
-    <ToggleSection onClick={toggleSection} description="Convert 3rd party module to native code">
+    <ToggleSection isOpen={isOpen} onClick={toggleSection} description="Convert 3rd party module to native code">
       Reviews & Questions
     </ToggleSection>
     <Drawer isOpen={isOpen}>

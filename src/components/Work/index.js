@@ -9,7 +9,6 @@ import ReviewsAndQuestionsSection from './sections/ReviewsAndQuestionsSection';
 
 const Work = () => {
   const { openSections, toggleSection, closeSection } = useSectionToggle();
-
   return (
     <PageLayout>
       <PageContainer>

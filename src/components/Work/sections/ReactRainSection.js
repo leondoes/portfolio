@@ -5,7 +5,7 @@ import { Drawer } from '../styled';
 
 const ReactRainSection = ({ isOpen, toggleSection, closeSection }) => (
   <>
-    <ToggleSection onClick={toggleSection} description="React.js based weather application">
+    <ToggleSection isOpen={isOpen} onClick={toggleSection} description="React.js based weather application">
       ReactRain
     </ToggleSection>
     <Drawer isOpen={isOpen}>

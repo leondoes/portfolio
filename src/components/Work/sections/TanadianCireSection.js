@@ -5,7 +5,7 @@ import { Drawer } from '../styled';
 
 const TanadianCireSection = ({ isOpen, toggleSection, closeSection }) => (
   <>
-    <ToggleSection onClick={toggleSection} description="Storefront mockup with sorting feature">
+    <ToggleSection isOpen={isOpen} onClick={toggleSection} description="Storefront mockup with sorting feature">
       Tanadian Cire
     </ToggleSection>
     <Drawer isOpen={isOpen}>

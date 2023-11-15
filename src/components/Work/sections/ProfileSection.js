@@ -5,7 +5,7 @@ import { Drawer } from '../styled';
 
 const ProfileSection = ({ isOpen, toggleSection, closeSection }) => (
   <>
-    <ToggleSection onClick={toggleSection} description="Profile menu converted to React.js">
+    <ToggleSection isOpen={isOpen} onClick={toggleSection} description="Profile menu converted to React.js">
       Profile Menu
     </ToggleSection>
     <Drawer isOpen={isOpen}>

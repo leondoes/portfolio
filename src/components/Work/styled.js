@@ -42,20 +42,13 @@ export const Copy = styled.div`
 export const TopCopy = styled.div`
   ${fontStyles.Copy};
   margin-top: -100px;
-  padding-bottom: 20px;
+  margin-bottom: 10vh;
 `;
 
 export const Drawer = styled.div`
   overflow: hidden;
   transition: max-height 0.8s ease-in-out;
   max-height: ${(props) => (props.isOpen ? "100%" : "0")};
-`;
-
-export const Deck = styled.div`
-  color: ${themeColors.font};
-  font-family: ${themeFonts.bodyFont};
-  display: flex;
-  flex-direction: column;
 `;
 
 export const Card = styled.div`
@@ -65,9 +58,11 @@ export const Card = styled.div`
   border-radius: 18px;
   background-color: #070708;
   margin-bottom: 100px;
-  margin-top: 100px;
+  margin-top: 10px;
   padding: 10px;
   scroll-margin: 100px;
+  margin-left:1px;
+  margin-right:1px;
 `;
 
 export const SideBySide = styled.div`
