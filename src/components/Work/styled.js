@@ -63,6 +63,7 @@ export const Card = styled.div`
   scroll-margin: 100px;
   margin-left:1px;
   margin-right:1px;
+  overflow: hidden;
 `;
 
 export const SideBySide = styled.div`
@@ -73,7 +74,9 @@ export const SideBySide = styled.div`
 
 export const Img = styled.img`
   display: flex;
-  width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
 `;
 
 export const GitHubContainer = styled.div`
