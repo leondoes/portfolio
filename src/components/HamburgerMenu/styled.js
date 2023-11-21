@@ -7,9 +7,12 @@ export const HamburgerIcon = styled.div`
   transform: ${(props) => `rotate(${props.rotate}deg)`};
   transition: transform 0.3s ease-in-out;
   display: inline-block;
+  background-color: rgba(36, 43, 42, 0.5);
+  padding: 6px;
+  border-radius: 10px;
   top: 35px;
   right: 10px;
-  width: 35px;
+  width: 25px;
   height: 25px;
   display: flex;
   flex-direction: column;
@@ -18,9 +21,9 @@ export const HamburgerIcon = styled.div`
   z-index: 3;
 
   span {
-    height: 3px;
+    height: 5px;
     width: 100%;
-    background-color: white;
+    background-color: ${themeColors.font};
     border-radius: 3px;
   }
 `;
@@ -60,6 +63,7 @@ export const AnimatedLink = styled(Link)`
   &:hover {
     color: ${themeColors.brand};
     border-radius: 5px;
+    
   }
 
   ${mediaQuery.down.tablet} {
@@ -75,7 +79,7 @@ export const HamburgerLinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(36, 43, 42, 0.5);
   border-radius: 8px;
   width: 160px;
   height: 170px;
