@@ -23,5 +23,8 @@ export const Copy = styled.div`
 ${fontStyles.Copy};
 `;
 
-
-
+export const City = styled.img`
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+`;

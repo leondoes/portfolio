@@ -1,12 +1,17 @@
 import React from "react";
 import PageLayout from "../../layout/PageLayout";
-import { Copy, PageContainer, Subtitle, Title } from "./styled";
+import { Copy, PageContainer, Subtitle, Title, City } from "./styled";
+import img from '../../assets/about_toronto.png'
 
 const About = () => (
   <PageLayout>
     <PageContainer>
       <Title>I design & develop REACT applications</Title>
       <Subtitle>About</Subtitle>
+      <City
+            src={img}
+            alt="City of Toronto"
+          />
       <Copy>
         <div>
           Hello there! I'm a Toronto-based developer specializing in UI/UX. I am
