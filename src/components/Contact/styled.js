@@ -30,15 +30,17 @@ export const EmailContainer = styled.div`
 font-family: ${themeFonts.brandFont};
 display: flex;
 font-weight: 900;
-font-size: 5vh;
+font-size: 36px;
 height: 80px;
 justify-content: center;
 align-items: center;
+margin-bottom: -10px;
 ${mediaQuery.down.tablet} {
-    font-size: 20px;
+    font-size: 24px;
   }
 
 `;
+
 export const GitHubContainer = styled.div`
 font-family: ${themeFonts.brandFont};
 margin: auto;
@@ -46,12 +48,27 @@ display: flex;
 font-weight: 900;
 font-size: 5vh;
 cursor: pointer;
-`
+margin-top: 20px;
+`;
 
 export const GitHubLogo = styled.img `
 width: 5vh;
 height: 5vh;
 padding-right: 10px;
+`;
+
+export const LinkedinContainer = styled.div`
+font-family: ${themeFonts.brandFont};
+margin: auto;
+display: flex;
+font-weight: 900;
+font-size: 5vh;
+cursor: pointer;
+margin-top: 20px;
+`
+
+export const LinkedinLogo = styled.img `
+width: 150px;
 `
 
 

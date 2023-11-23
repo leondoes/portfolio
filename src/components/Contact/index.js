@@ -8,9 +8,12 @@ import {
   Subtitle,
   GitHubLogo,
   GitHubContainer,
+  LinkedinLogo,
+  LinkedinContainer,
   EmailVerified
 } from "./styled";
 import github from "../../assets/github_white.png";
+import linkedin from "../../assets/linkedin_white.png";
 import EmailReCAPTCHA from "../../common/EmailReCAPTCHA";
 
 const Contact = () => (
@@ -50,6 +53,13 @@ const Contact = () => (
         <GitHubLogo src={github} alt="GitHub Logo" />
         GitHub
       </GitHubContainer>
+      <LinkedinContainer
+        onClick={() => {
+          window.open("https://github.com/leondoes", "_blank", "noopener,noreferrer");
+        }}
+      >
+        <LinkedinLogo src={linkedin} alt="LinkedIn Logo" />
+      </LinkedinContainer>
     </PageContainer>
   </PageLayout>
 );
