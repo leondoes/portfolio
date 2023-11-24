@@ -76,8 +76,13 @@ export const Img = styled.img`
   display: flex;
   width: 100%;
   height: auto;
-  border-radius: 18px;
 `;
+
+export const DemoContainer = styled.div`
+  display: flex;
+  cursor: pointer;
+  max-width: 300px;
+`
 
 export const GitHubContainer = styled.div`
   font-family: ${themeFonts.brandFont};
@@ -94,7 +99,8 @@ export const GitHubLogo = styled.img`
   padding-right: 10px;
 `;
 
-export const gutHubPages = styled.img``;
+export const gutHubPages = styled.img`
+`;
 
 export const CloseButton = styled.button`
   background-color: transparent;

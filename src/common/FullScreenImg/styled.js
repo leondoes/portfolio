@@ -6,6 +6,7 @@ export const ImageContainer = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  padding: 10px 0px;
 `;
 
 export const Image = styled.img`
