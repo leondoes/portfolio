@@ -1,6 +1,6 @@
 import React from "react";
 import { ProfileNav } from "../../../assets/strings.en.js";
-import { Card, Subtitle, Copy, Img, CloseButton } from "../styled";
+import { Card, Subtitle, Copy, Img, CloseButton, DemoContainer } from "../styled";
 import FullScreenImg from "../../../common/FullScreenImg";
 import pm_recreation from "../../../assets/pm_recreation.png";
 import pm_code from "../../../assets/pm_code.png";
@@ -26,9 +26,9 @@ const ProfileCard = ({onClose}) => (
     <Copy>{ProfileNav.Body2}</Copy>
     <Copy>
       You can find the Profile Menu Demo at
-      <a href="https://61c1jf.csb.app/" target="_blank" rel="noreferrer">
+      <DemoContainer><a href="https://61c1jf.csb.app/" target="_blank" rel="noreferrer">
         <Img src={CodeSandbox_logo} />
-      </a>
+      </a></DemoContainer>
       <CloseButton onClick={onClose}>Close</CloseButton>
     </Copy>
     

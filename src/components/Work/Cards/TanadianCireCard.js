@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Subtitle, Copy, SideBySide, Img, CloseButton } from "../../Work/styled";
+import { Card, Subtitle, Copy, SideBySide, Img, CloseButton, DemoContainer } from "../../Work/styled";
 import { TanadianCire } from '../../../assets/strings.en.js';
 import FullScreenImg from '../../../common/FullScreenImg';
 import AutoplayVideo from '../../../common/AutoplayVideo';
@@ -40,9 +40,10 @@ const TanadianCireCard = ({onClose}) => (
   <Copy>{TanadianCire.Body4}</Copy>
   <Copy>
     You can find the Product List Page Demo at
+    <DemoContainer>
     <a href="https://316qhh.csb.app/ProductListPage" target="_blank" rel="noreferrer">
       <Img src={CodeSandbox_logo}/>
-    </a><CloseButton onClick={onClose}>Close</CloseButton>
+    </a></DemoContainer><CloseButton onClick={onClose}>Close</CloseButton>
   </Copy>
   
 </Card>
