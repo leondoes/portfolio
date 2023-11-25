@@ -38,7 +38,12 @@ margin-bottom: -10px;
 ${mediaQuery.down.tablet} {
     font-size: 24px;
   }
+`;
 
+export const EmailIcon = styled.div `
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const GitHubContainer = styled.div`
@@ -49,6 +54,9 @@ font-weight: 900;
 font-size: 5vh;
 cursor: pointer;
 margin-top: 20px;
+-webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const GitHubLogo = styled.img `
