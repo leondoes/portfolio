@@ -10,7 +10,8 @@ import {
   GitHubContainer,
   LinkedinLogo,
   LinkedinContainer,
-  EmailVerified
+  EmailVerified,
+  EmailIcon
 } from "./styled";
 import github from "../../assets/github_white.png";
 import linkedin from "../../assets/linkedin_white.png";
@@ -36,7 +37,7 @@ const Contact = () => (
         </div>
       </Copy>
       <Subtitle>Let's build something amazing together!</Subtitle>
-      <EmailContainer>📧
+      <EmailContainer><EmailIcon>📧</EmailIcon>
       <EmailVerified
         onClick={() => {
           window.open("mailto:leondoes.contact@gmail.com", "_blank", "noopener,noreferrer");

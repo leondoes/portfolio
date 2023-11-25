@@ -91,12 +91,18 @@ export const GitHubContainer = styled.div`
   font-size: 5vh;
   cursor: pointer;
   margin-right: 59%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const GitHubLogo = styled.img`
   width: 5vh;
   height: 5vh;
   padding-right: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const gutHubPages = styled.img`
