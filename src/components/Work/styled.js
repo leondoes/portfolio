@@ -22,7 +22,8 @@ export const Title = styled.div`
 export const Subtitle = styled.div`
   ${fontStyles.Subtitle};
   scroll-margin-top: 150px;
-
+  letter-spacing: -4px;
+  font-variant: small-caps;
   a {
     text-decoration: none; // Removes the underline
     color: inherit; // Ensures the link uses the Subtitle color
