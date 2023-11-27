@@ -113,6 +113,9 @@ export const CloseButton = styled.button`
   background-color: transparent;
   border: none;
   padding: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-family: ${themeFonts.bodyFont};
   color: ${themeColors.font};
   cursor: pointer;
