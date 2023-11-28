@@ -56,7 +56,7 @@ const Contact = () => (
       </GitHubContainer>
       <LinkedinContainer
         onClick={() => {
-          window.open("https://github.com/leondoes", "_blank", "noopener,noreferrer");
+          window.open("https://www.linkedin.com/in/leon-dobrescu-887120296/", "_blank", "noopener,noreferrer");
         }}
       >
         <LinkedinLogo src={linkedin} alt="LinkedIn Logo" />
