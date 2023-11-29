@@ -74,7 +74,7 @@ export const AnimatedLink = styled(Link)`
 export const HamburgerLinkContainer = styled.div`
   position: absolute;
   top: 90px; /* Adjusted position */
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   right: 10px;
   z-index: 10;
   display: flex;
