@@ -71,7 +71,7 @@ const SplashPage = () => {
         <ContactLink
           onMouseEnter={() => setContactHover(true)}
           onMouseLeave={() => setContactHover(false)}
-          to="/Contact"
+          to="/contact"
         >
           {contactHover ? `Contact` : <div style={{display: "flex"}}>leon<div style={{color:"#ff311b"}}>does.</div></div>} 
         </ContactLink>
