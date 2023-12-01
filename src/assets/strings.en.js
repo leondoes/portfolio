@@ -44,7 +44,9 @@ export const ReviewsAndQuestions = {
   Body3: `In the portfolio demo, I crafted a mock version of the component to responsibly avoid real API calls on behalf of Mejuri. This rendition meticulously fetches the first 10 pages of customer reviews and questions, mirroring Mejuri's actual functionality. The mock-up replicates the pagination, question form (powered by 'react-form' for optimized form handling and validation), and overall ratings components, ensuring everything is identical to Mejuri's implementation. Moreover, I've placed a strong emphasis on responsiveness, ensuring that the component adapts seamlessly across various devices and screen sizes. This demo, complete with a 'phone view' and diverse testing controls, showcases not just the functionality, but also the precision and attention to detail in my development approach, inviting users to engage with a component that blends seamlessly with Mejuri's established web presence.`
 };
 
-
+export const CatnadianParty = {
+  Subtitle: `The Catnadian Party of Canada - Coming soon`
+}
 
 
 
