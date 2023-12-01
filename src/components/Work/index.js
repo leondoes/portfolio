@@ -3,6 +3,7 @@ import PageLayout from '../../layout/PageLayout';
 import { PageContainer, Title, TopCopy } from './styled';
 import { useSectionToggle } from '../../hooks/useSectionToggle';
 import TanadianCireSection from './sections/TanadianCireSection';
+import CatnadianPartySection from './sections/CatnadianPartySection';
 import ProfileSection from './sections/ProfileSection';
 import ReactRainSection from './sections/ReactRainSection';
 import ReviewsAndQuestionsSection from './sections/ReviewsAndQuestionsSection';
@@ -19,6 +20,11 @@ const Work = () => {
           challenges and create compelling digital solutions. Feel free to
           explore and get inspired by them.
         </TopCopy>
+        <CatnadianPartySection
+          isOpen={openSections.has("CatnadianParty")}
+          toggleSection={() => toggleSection("CatnadianParty")}
+          closeSection={() => closeSection("CatnadianParty")}
+          />
         <ReviewsAndQuestionsSection
           isOpen={openSections.has("ReviewsAndQuestions")}
           toggleSection={() => toggleSection("ReviewsAndQuestions")}
